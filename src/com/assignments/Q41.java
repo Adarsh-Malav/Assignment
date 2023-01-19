@@ -24,7 +24,7 @@ class Student{
 	int age;
 	String course;
 	
-	public Student(int roll_no,String name,int age,String course) {
+	public Student(int roll_no,String name,int age,String course){
 		this.roll_no=roll_no;
 		this.name=name;
 		this.age=age; 
@@ -54,7 +54,7 @@ class Student{
 public class Q41 {
 public static void main(String[] args) {
 	
-	Student e1=new Student(16, "Ada@rsh", 22, "Btech");
+	Student e1=new Student(14, "Adarsh", 21, "Btech");
 	
 	try {
 		
@@ -64,6 +64,10 @@ public static void main(String[] args) {
 		System.out.println("Exception occured"+e);
 	}
 	catch (InvalidName e) {
+		
+		System.out.println("Exception occured"+e);
+	}
+	catch (Exception e) {
 		
 		System.out.println("Exception occured"+e);
 	}

@@ -8,9 +8,7 @@ public class Q39 {
 		
 		if(a<18)
 			throw new ArithmeticException("not valid");
-		else {
-			System.out.println("Welcome to vote");
-		}
+		
 	}
 	
 public static void main(String[] args) {
@@ -19,6 +17,13 @@ public static void main(String[] args) {
 	int a =scanner.nextInt();
 	scanner.close();
 	Q39 e1=new Q39();
-	e1.validate(a);
+	try {
+		e1.validate(a);
+		System.out.println("you are smart");
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		System.out.println(e);
+	}
 }
 }
