@@ -3,6 +3,7 @@ package com.assignments;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class Q47_Q56 {
 public static void main(String[] args) {
@@ -65,11 +66,31 @@ public static void main(String[] args) {
 	
 	
 //------------------------------------------------------------------	
-	Collections.shuffle(s1);
-	System.out.println(s1);    //Q56
+//	Collections.shuffle(s1);
+//	System.out.println(s1);    //Q56
 	
 	s2.addAll(s2);
 	System.out.println(s2);  
+	
+//------------------------------------------------------------------	
+
+	Collections.reverse(s1);
+	System.out.println(s1);
+	
+//------------------------------------------------------------------	
+	List<String> s3=s1.subList(2, 4);
+	System.out.println(s3);
+	
+//------------------------------------------------------------------	
+	
+	System.out.println(s1.equals(s3));
+//------------------------------------------------------------------	
+	Collections.swap(s3, 0, 1);
+	System.out.println(s3);
+	
+	s1.addAll(s2);
+	System.out.println(s1);
+	
 	
 }
 }
